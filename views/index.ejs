@@ -10,15 +10,15 @@
   <ul class="quotes">
   <% for(var i=0; i<quotes.length; i++) {%>
     <li class="quote">
-      <span><%= quotes[i].name %></span>
-      <span><%= quotes[i].quote %></span>
+      <span><%= quotes[i].text %></span>
+      <span><%= quotes[i].complete %></span>
     </li>
   <% } %>
   </ul>
 
   <form action="/quotes" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="text" placeholder="quote" name="quote">
+    <input type="text" placeholder="text" name="text">
+    <input type="text" placeholder="complete" name="complete">
     <button type="submit">Submit</button>
   </form>
 </body>
